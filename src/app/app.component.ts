@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Properties } from './components/test/test.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test';
+
+  inputObj: Properties= {
+    inputType: 'password',
+    buttonClass:'p-button-danger',
+    inputLabelContent: 'Contraseña'
+  }
 }
